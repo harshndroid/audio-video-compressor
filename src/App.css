@@ -1,0 +1,9 @@
+html, body, #root, #root>div {
+  height: 100%;
+  /* background-color: #f2f7f8; */
+  /* background-color: #363636; */
+  background-color: #1b202b;
+}
+#root{  display: flex;
+  align-items: center;
+  justify-content: center;}
