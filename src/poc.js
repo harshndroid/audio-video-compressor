@@ -24,14 +24,14 @@ function App() {
   const [tempVideos, setTempVideos] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const videoEl = useRef(null);
+  // const videoEl = useRef(null);
 
-  const handleLoadedMetadata = (e) => {
-    console.log('======e', e);
-    const video = videoEl.current;
-    if (!video) return;
-    console.log(`The video is ${video.duration} seconds long.`, { video });
-  };
+  // const handleLoadedMetadata = (e) => {
+  //   console.log('======e', e);
+  //   const video = videoEl.current;
+  //   if (!video) return;
+  //   console.log(`The video is ${video.duration} seconds long.`, { video });
+  // };
   const getTimings = () => {
     return VIDEOS_ARRAY.map((ele) => {
       const subEles = ele.split('-');
@@ -146,7 +146,7 @@ function App() {
     console.log('tempVideos', _temp);
   }, []);
 
-  useEffect(() => {}, [playerPlaying]);
+  // useEffect(() => {}, [playerPlaying]);
   const onReady = useCallback(
     (vid) => {
       console.log('on ready', isReady, vidIndex);
