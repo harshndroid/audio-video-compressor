@@ -27,7 +27,6 @@ function App() {
   // const videoEl = useRef(null);
 
   // const handleLoadedMetadata = (e) => {
-  //   console.log('======e', e);
   //   const video = videoEl.current;
   //   if (!video) return;
   //   console.log(`The video is ${video.duration} seconds long.`, { video });
